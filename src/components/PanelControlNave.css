@@ -1,0 +1,114 @@
+/* ============================================
+   ESTILOS PARA EL PANEL DE CONTROL
+   ============================================ */
+.panel-control {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+  background: linear-gradient(135deg, #0a0a2e, #1a1a3e);
+  color: #00ffcc;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 255, 204, 0.2);
+}
+
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.indicador {
+  background: rgba(0, 255, 204, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 204, 0.3);
+}
+
+.barra-combustible {
+  width: 100%;
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.nivel-combustible {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.estado-nave, .planetas-visitados {
+  background: rgba(0, 255, 204, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  border-left: 3px solid #00ffcc;
+}
+
+.estadisticas {
+  background: rgba(0, 255, 204, 0.08);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.controles {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.controles button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #00ffcc;
+  color: #0a0a2e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: 'Courier New', monospace;
+}
+
+.controles button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+}
+
+.controles button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.debug-info {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.debug-info button {
+  padding: 8px 16px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.planetas-visitados ul {
+  list-style: none;
+  padding: 0;
+}
+
+.planetas-visitados li {
+  padding: 5px 10px;
+  background: rgba(0, 255, 204, 0.1);
+  margin: 5px 0;
+  border-radius: 5px;
+}
