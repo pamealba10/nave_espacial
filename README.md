@@ -1,16 +1,48 @@
-# React + Vite
+# 🚀 Panel de Control - Nave Espacial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción del Proyecto
 
-Currently, two official plugins are available:
+**Panel de Control - Nave Espacial** es una aplicación interactiva desarrollada en React que simula el viaje de un explorador espacial a través del universo. Este proyecto fue diseñado específicamente para comprender y practicar los conceptos fundamentales del ciclo de vida de los componentes en React, utilizando hooks modernos como `useState`, `useEffect` y `useMemo`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🎯 Objetivos del Proyecto
 
-## React Compiler
+- **Comprender el ciclo de vida** de componentes funcionales en React
+- **Practicar el uso de hooks** esenciales para gestión de estado y efectos secundarios
+- **Optimizar rendimiento** mediante memoización con `useMemo`
+- **Simular escenarios reales** de montaje, actualización y desmontaje de componentes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Características Principales
 
-## Expanding the ESLint configuration
+### 🛸 Sistema de Control de Nave
+- **Seguimiento de distancia** recorrida en kilómetros
+- **Gestión de combustible** con consumo simulado
+- **Estado dinámico** de la nave según las condiciones del viaje
+- **Descubrimiento automático** de nuevos planetas cada 500 km
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📊 Estadísticas en Tiempo Real
+- Tiempo estimado de viaje
+- Consumo promedio de combustible
+- Eficiencia del viaje (km por % de combustible)
+- Conteo de planetas visitados
+
+### 🎮 Interacción del Usuario
+- Botón **"Viajar"** para avanzar en la misión
+- Botón **"Repostar"** para recargar combustible
+- Botón **"Reiniciar viaje"** para comenzar de nuevo
+- Control de visibilidad de componentes para probar desmontaje
+
+### 🔍 Características Técnicas
+- **Logs en consola** que muestran el ciclo de vida completo
+- **Optimización de rendimiento** con `useMemo`
+- **Componentes anidados** para demostrar ciclos de vida independientes
+- **Simulación de operaciones costosas** y su optimización
+
+## 🛠️ Tecnologías Utilizadas
+
+- **React 18+** - Framework principal
+- **React Hooks** - `useState`, `useEffect`, `useMemo`
+- **Vite** o **Create React App** - Bundler y entorno de desarrollo
+- **CSS Moderno** - Estilos con efectos visuales y animaciones
+- **JavaScript ES6+** - Código moderno y funcional
+
+![Captura de pantalla](public/img1.png)
